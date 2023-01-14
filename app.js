@@ -14,14 +14,14 @@ app.use(express.urlencoded({ extended: false }));
 
 const LectureController = require("./modules/controllers/LiveLectureControllers");
 const product = require("./modules/routes/product");
-const signup = require("./modules/routes/User");
+// const signup = require("./modules/routes/User");
 const category = require("./modules/routes/category") ; 
 const restaurant = require("./modules/routes/restaurant");
 const order = require("./modules/routes/order");
 const food = require("./modules/routes/food");
 app.use("/api", LectureController);
 app.use("/product" ,product ); 
-app.use("/signup" ,signup );
+// app.use("/signup" ,signup );
 app.use("/category" ,category );
 app.use("/restaurant" ,restaurant );
 app.use("/order" ,order );
